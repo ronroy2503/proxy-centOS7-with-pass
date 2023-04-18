@@ -7,7 +7,7 @@ Install
 Run command (replace *123456* with your password):
 
 ```bash
-curl -L https://raw.githubusercontent.com/akkradet/proxy-centOS7/master/install.sh | PROXY_PASS=123456 sh
+curl -L https://raw.githubusercontent.com/ronroy2503/proxy-centOS7/master/install.sh | PROXY_PASS=123456 sh
 ```
 
 After install, you can access your proxy on port **3128**.
