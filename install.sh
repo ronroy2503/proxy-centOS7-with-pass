@@ -7,4 +7,5 @@ curl -o /etc/squid/squid.conf https://raw.githubusercontent.com/akkradet/proxy-c
 # Add user
 htpasswd -bc /etc/squid/.htpasswd admin $PROXY_PASS
 systemctl start squid
+iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 3128 -j ACCEPT
 systemctl status squid
